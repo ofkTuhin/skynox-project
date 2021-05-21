@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3,h4{
+    margin: 10px 0px;
+}
+img{
+    max-width: 100%;
+}
+p{
+    color: rgba(170, 166, 166, 0.651);
+    font-size: 14px;
+    margin: 15px 0px;
+}
+a{
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 10px 30px;
+    border: 1px solid black;
+    display: inline-block;
+}
+.container{
+    width: 1000px;
+    
+    margin: auto;
+}
+.clearfix{
+    clear: both;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content{
+    padding: 20px;
+}
+.banner-left{
+  width: 50%;
+}
+
+
+.banner-right{
+    width: 50%;
+}
+.left-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.gallery{
+   width:18%;
+   
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-content{
+    width: 30%;
+    display: flex;
+}
+.details{
+    padding: 0px 10px;
+}
+
+.banner-right{}
+
+.add{
+    background-color: black;
+    color:white;
+}
+.wishlist{
+    color: #000;
+    background-color: #ffff;
+}
+.icon{
+   padding-right: 5px; 
+}
+.color{
+    color: rgb(60 243 0);
+}
+
+
+@media (max-width:768px)
+{
+    .service-content{
+        width: 100%;
+        margin-left: 30px;
+        
+       
+    } 
+
+    .banner-left{
+        width: 100%;
+        padding: 0 50px;
+      }
+      
+      .banner-right{
+          width: 100%;
+          padding: 0 50px;
+      }
+      
+      .gallery{
+          width: 30%;
+      }
+      .container{
+          width: 100%;
+          margin: auto;
+      }
+      .add{
+          margin: 5px 0px;
+      }
+}

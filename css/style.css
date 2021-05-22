@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 h3,h4{
     margin: 10px 0px;
@@ -36,16 +37,52 @@ main{
     flex-wrap: wrap;
 }
 
-.content{
-    padding: 20px;
-}
+
+/* banner lef */
 .banner-left{
   width: 50%;
 }
 
 
-.banner-right{
-    width: 50%;
+
+.banner-image{
+    position: relative;
+}
+
+.left-arrow{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: azure;
+}
+
+.right-arrow{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin-right:20px ;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: azure;
+}
+.arrow i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .left-footer{
     display: flex;
@@ -57,20 +94,23 @@ main{
    width:18%;
    
 }
-.service{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.service-content{
-    width: 30%;
-    display: flex;
-}
-.details{
-    padding: 0px 10px;
-}
 
-.banner-right{}
+/* banner right */
+.banner-right{
+    width: 50%;
+}
+small{
+    position: relative;
+}
+small::before{
+    content: '';
+    width: 80px;
+    height: 1px;
+    background-color: #1e1e1e;
+    top: 15px;
+    left: 0;
+    position: absolute;
+}
 
 .add{
     background-color: black;
@@ -87,7 +127,27 @@ main{
     color: #00d19b;
 }
 
+/* service section */
+.service{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-content{
+    width: 30%;
+    display: flex;
+}
+.service-color{
+    color: #8f8f8f;
+}
+.details{
+    padding: 0px 10px;
+}
 
+
+
+
+/* responsive section */
 @media (max-width:768px)
 {
     .service-content{
@@ -114,7 +174,8 @@ main{
           width: 100%;
           margin: auto;
       }
-      .add{
+      /* .add{
           margin: 5px 0px;
-      }
+      } */
+     
 }
